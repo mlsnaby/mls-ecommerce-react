@@ -1,3 +1,6 @@
+.ok{
+    justify-content: center;
+}
 .corps{
     display: flex;
     background-color: white;
@@ -48,35 +51,33 @@
     
 }
 
-
-
-
 .corps-container{
     width: 91%;
-    height: 380px;
+    height: 320px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     margin-left: 60px;
+
 }
 .corps-box{
-    max-width: 230px;
-    height: 330px;
+    max-width: 200px;
+    height: 290px;
     display: flex;
     flex-grow: 0.5;
     align-items: center;
     flex-direction: column;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-    margin: 20px;
+    margin: 10px;
     background-color: white;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 .corps-image{
-    width: 200px;
-    height: 210px;
+    width: 150px;
+    height: 150px;
     margin: 20px;
     cursor: pointer;
    
@@ -91,9 +92,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 82.5%;
     padding: 10px 20px;
-    border-top: 1px solid #f3f3f3;
+    border-top: 2px solid #f3f3f3;
+    border-radius: 10px;
 }
 .p-name{
     color: #727272;
@@ -106,36 +108,45 @@
 .corps-box:hover{
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
 }
-.add-cart{
-    position: absolute;
-    top: 970px;
-    width: 50px;
-    height: 50px;
-    right: 870px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    background-color: #0b9d8a;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
-    display: none;
-    animation: frame-shopping-cart 0.5s;
-}
-.add-cart:hover{
-    background-color:#0b9d80;
-    transition: all ease 0.5s;
-}
-.corps-box:hover .add-cart{
-    display: flex;
-}
+
+
 .corps-box:hover {
     display: flex;
-    background-color: #f3f3f3;
+    background-color: whitesmoke;
+    
 }
 
 .star-icon {
     color: #0b9d8a;
     display: flex;
     justify-content: center;
+    width: 10px;
+    height: 20px;
+}
+
+/*contenu 2   titre arrivage */
+
+.titre-arrivage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    margin-top: 20px;
+}
+.titre-arrivage strong{
+    color: #ffffff;
+    background-color: #202020;
+    font-weight: 500;
+    font-size: 25px;
+    width: 195px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border-radius: 10px;*/
+}
+.titre-arrivage p{
+    color: #808080;
+    margin: 10px;
+    font-size: 0.9rem;
 }
